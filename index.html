@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SEO Metrics</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="api.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SEO Metrics</h1>
+      <div class="form-group">
+        <label for="domain">Domain:</label>
+        <input type="text" class="form-control" id="domain" placeholder="Enter URL"/>
+      </div>
+      <input type="submit" id="button" class="btn btn-default" value="Submit" />
+    </div>
+    <br /><br />
+    <div id="loading" class="container">
+      <label>Processing...</label>
+    </div>
+    <div id="result" class="container">
+      <div id="alexa" class="list-group"></div>
+      <div id="google" class="list-group"></div>
+      <div id="google-back-links" class="list-group"></div>
+    </div>
+    <br />
+  </body>
+</html>
